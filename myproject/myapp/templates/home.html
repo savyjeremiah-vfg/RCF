@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>RCF</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+ {% load static %}
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+<!-- script
+================================================== -->
+<script src="{% static 'js/modernizr.js' %}"></script>
+
+<!-- favicons
+================================================== -->
+<link rel="apple-touch-icon" sizes="180x180" href="{% static 'apple-touch-icon.png' %}">
+<link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon-32x32.png' %}">
+<link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon-16x16.png' %}">
+<link rel="manifest" href="{% static 'site.webmanifest' %}">
+
+</head>
+
+
+
+    {% include "nav.html" %}
+<!-- hero
+    ================================================== -->
+    <section class="s-hero" data-parallax="scroll" data-image-src="{% static 'images/header-bgs/about-header-bg-2000.jpg' %}" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+        <div class="hero-left-bar"></div>
+
+        <div class="row hero-content">
+
+            <div class="column large-full hero-content__text">
+                <h1>
+                    The <br/>  Lord's <br/>Favourite
+                </h1>
+
+                <div class="hero-content__buttons">
+                    <a href="{% url 'events' %}" class="btn btn--stroke">Upcoming Events</a>
+                    <a href="about.html" class="btn btn--stroke">About Us</a>
+                </div>
+            </div> <!-- end hero-content__text -->
+
+        </div> <!-- end hero-content -->
+
+        <ul class="hero-social">
+            <li class="hero-social__title">Follow Us</li>
+            <li>
+                <a href="https://www.facebook.com/rcfyct" title="">Facebook</a>
+            </li>
+            <li>
+                <a href="https://youtube.com/@rcfyabatech?si=URATU9B9bEGj6Uho" title="">YouTube</a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/rcfyabatech?igsh=dHJ4bnAzaWdhY2w3" title="">Instagram</a>
+            </li>
+        </ul> <!-- end hero-social -->
+
+        <div class="hero-scroll">
+            <a href="#about" class="scroll-link smoothscroll">
+                Scroll For More
+            </a>
+        </div> <!-- end hero-scroll -->
+
+    </section> <!-- end s-hero -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about">
+
+        <div class="row row-y-center about-content">
+
+            <div class="column large-half medium-full">
+                <h1 class="subhead">Welcome to RCF YABATECH</h1>
+                <p class="lead">
+                The Redeemed Christian Fellowship (RCF) is a dynamic, faith-based student organization affiliated with the Redeemed Christian Church of God (RCCG). It is established in various higher institutions across Nigeria and beyond, serving as a platform for students to grow spiritually, build meaningful relationships, and fulfill their God-given purpose during their academic journey. RCF is committed to fostering spiritual growth through regular Bible studies, worship sessions, prayer meetings, and evangelistic outreach programs.
+
+The fellowship emphasizes the importance of living a Christ-centered life and equips students with the tools to navigate the challenges of campus life while staying rooted in their faith. RCF also creates opportunities for leadership development, encouraging members to take active roles in ministry and service, both within the fellowship and the broader community. With its welcoming atmosphere, RCF is a home away from home, where students can find support, encouragement, and a sense of belonging.
+
+Above all, RCF is driven by the mission to win souls for Christ and prepare believers for eternity, ensuring that students leave not only academically equipped but spiritually empowered to impact the world for God’s glory.
+                </p>
+                <a href="#" class="btn btn--primary btn--about">More About Hesed</a>
+            </div>
+
+            <div class="column large-half medium-full">
+                <ul class="about-sched">
+                    <li>
+                        <h4>Main Church Service</h4>
+                        <p>
+                        Sunday - 8:00 AM | 11:00 AM | <br>
+                        second floor
+                        </p>
+                    </li>
+                    <li>
+                        <h4>miracle</h4>
+                        <p>
+                        4:45 AM | 6pm <br>
+                        
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Prayer Meeting</h4>
+                        <p>
+                        Friday - 4:45 PM <br>
+                        
+                        </p>
+                    </li>
+                </ul> <!-- end about-sched-->
+            </div>
+
+        </div> <!-- end about-content -->
+
+    </section> <!-- end s-about -->
+
+
+    <!-- connect
+    ================================================== -->
+    <section class="s-connect">
+
+        <div class="row connect-content">
+            <div class="column large-half tab-full">
+                <h3 class="display-1">Volunteer With Us.</h3>
+                <p>
+                Volunteer with us:
+RCF workers are members of the Redeemed
+ Christian Fellowship who volunteer their time and efforts to serve God and 
+ the community. They are passionate about spreading the word of God
+  and helping those in need.
+                </p>
+
+                <a href="{% url 'volunteer' %}" class="btn btn--primary h-full-width">I'm Interested</a>
+            </div>
+            <div class="column large-half tab-full">
+                <h3 class="display-1">Join a Connect Group.</h3>
+                <p>
+                "Join our RCF WhatsApp platform to stay updated on fellowship events, 
+                 Bible study discussions, prayer requests, and more! Connect with fellow
+                  members, grow in faith, and be part of a supportive community. Click to join and let’s grow
+                   together! 
+
+I'll send the link soon
+                </p>
+
+                <a href="https://chat.whatsapp.com/Eap6yLWgqy1EgKEzQ7aXUJ" class="btn btn--primary h-full-width">Learn More</a>
+            </div>
+        </div> <!-- end connect-content  -->
+
+    </section> <!-- end s-connect -->
+
+
+    <!-- events
+    ================================================== -->
+    <section class="s-events">
+
+        <div class="row events-header">
+            <div class="column">
+                <h2 class="subhead">Upcoming Events.</h2>
+            </div>
+        </div> <!-- end event-header -->
+
+        <div class="row block-large-1-2 block-900-full events-list">
+
+            <div class="column events-list__item">
+                <h3 class="display-1 events-list__item-title">
+                    <a href="#0" title=""> Church.</a>
+                </h3>
+                <p>
+             
+
+"Start your week with purpose and spiritual growth 
+at our Monday Bible Study! Join us every Monday as we dive deep into 
+God’s Word, uncovering timeless truths and practical lessons for daily living.
+ Whether you’re new to the faith or have been walking with God for years, this is a space to
+  learn, ask questions, and grow together in fellowship. Let’s strengthen our
+   faith and equip ourselves for the week ahead. Come with a friend and an open heart—see 
+   you there!"
+                </p>
+                <ul class="events-list__meta">
+                    <li class="events-list__meta-date">MONDAY</li>
+                    <li class="events-list__meta-time"> 4:45 pm to 6pm </li>
+                    
+                </ul>
+            </div> <!-- end events-list__item -->
+            <div class="column events-list__item">
+                <h3 class="display-1 events-list__item-title">
+                    <a href="#0" title="">Prayer Meeting.</a>
+                </h3>
+                <p>
+              Main church service should be glorious service 8am to 11 am
+
+
+
+Miracle hour 
+Same as Bible study
+                </p>
+                <ul class="events-list__meta">
+                    <li class="events-list__meta-date">sunday,</li>
+                    <li class="events-list__meta-time">8:00AM - 11:00AM</li>
+                    <li class="events-list__meta-location">Second Floor, Alumni Building</li>
+                </ul>
+            </div> <!-- end events-list__item -->
+    
+
+        </div> <!-- end events-list -->
+
+    </section> <!-- end s-events -->
+
+
+    <!-- series
+    ================================================== -->
+    <section class="s-series">
+
+        <div class="series-img" style="background-image: url('images/series-2000.jpg');"></div>
+
+        <div class="row row-y-center series-content">
+
+            <div class="column large-half medium-full">
+                <h3 class="subhead">Current Series</h3>
+                <h2>Shape Your Life with the Words of Life.</h2>
+                <p>
+                Aut sed amet et quis aliquid laborum minus consequatur. Animi repellendus quas. 
+                Est voluptates minima ut dolorum aliquid sint. Ratione et et molestias rerum 
+                quibusdam. Deserunt suscipit ut expedita. Non numquam aut eum perferendis 
+                molestiae praesentium aliquid voluptatum numquam dolorum aliquid sint minima.
+                </p>
+            </div> <!-- end column -->
+
+            <div class="column large-half medium-full">
+                <div class="series-content__buttons">
+                    <a href="" class="btn btn--large h-full-width">Watch the Video</a>
+                    <a href="" class="btn btn--large h-full-width">Listen To the Message</a>
+                </div>
+
+                <div class="series-content__subscribe">
+                    <p>
+                    Never missed a message. Subscribe to our YouTube and Podcast channels.
+                    </p>
+                    
+                    <ul class="series-content__subscribe-links">
+                        <li class="ss-apple-podcast"><a href="#0">Apple Podcast</a></li>
+                        <li class="ss-spotify"><a href="#0">Spotify</a></li>
+                        <li class="ss-soundcloud"><a href="#0">SoundCloud</a></li>
+                        <li class="ss-youtube"><a href="#0">Youtube</a></li>
+                    </ul>
+                </div>
+            </div> <!-- end column -->
+            
+        </div> <!-- series-content -->
+
+    </section> <!-- end s-series -->
+
+<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'js/plugins.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+
+
+</body>
