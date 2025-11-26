@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Hesed - Connect Group</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+{% load static %}
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+<!-- script
+================================================== -->
+<script src="{% static 'js/modernizr.js' %}"></script>
+
+<!-- favicons
+================================================== -->
+<link rel="apple-touch-icon" sizes="180x180" href="{% static 'apple-touch-icon.png' %}">
+<link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon-32x32.png' %}">
+<link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon-16x16.png' %}">
+<link rel="manifest" href="{% static 'site.webmanifest' %}">
+
+</head>
+
+<body id="top">
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-jump">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+    <!-- header
+    ================================================== -->
+    {% include "nav.html" %}
+    
+    <!-- page header
+    ================================================== -->
+    <section class="page-header page-header--connect">
+
+        <div class="gradient-overlay"></div>
+        <div class="row page-header__content">
+            <div class="column">
+            <h1>
+                    The   Lord's <br/>Favourite
+                </h1>
+            </div>
+        </div>
+
+    </section> <!-- end page-header -->
+
+
+    <!-- page content
+    ================================================== -->
+    <section class="page-content">
+
+        <div class="row">
+            <div class="column">
+
+                <p class="lead drop-cap">
+                "Join our RCF WhatsApp platform to stay updated on fellowship events, Bible study discussions, prayer requests, and more! Connect with fellow members, grow in faith, and be part of a supportive community. Click to join and let’s grow together! 
+
+I'll send the link soon
+                </p>
+
+               
+                <br>
+
+                <h2>Join a Connect Group.</h2>
+                
+                <p>
+                Kindly fill-up the form below to help us better understand your profile and help you connect to a connect group that suits you.
+                </p>
+
+                <form name="connectForm" id="connectForm" class="connectForm" method="post" action="" autocomplete="off">
+                    <fieldset>
+
+                        <div class="form-field">
+                            <input name="cName" id="cName" class="h-full-width h-remove-bottom" placeholder="Your Name" value="" type="text">
+                        </div>
+
+                        <div class="form-field">
+                            <input name="cEmail" id="cEmail" class="h-full-width h-remove-bottom" placeholder="Your Email" value="" type="text">
+                        </div>
+
+                        <div class="form-field">
+                            <input name="cPhone" id="cPhone" class="h-full-width h-remove-bottom" placeholder="Mobile Number" value="" type="tel">
+                        </div>
+
+                        <div class="form-field">
+                            <input name="cFacebook" id="cFacebook" class="h-full-width h-remove-bottom" placeholder="Facebook URL" value="" type="text">
+                        </div>
+
+                        <div class="form-field">
+                            <input name="cAge" id="cAge" class="h-full-width h-remove-bottom" placeholder="Your Age" value="" type="text">
+                        </div>
+
+                        <div class="form-field">
+                            <input name="cAvailability" id="cAvailability" class="h-full-width h-remove-bottom" placeholder="Availability (Day & Time)" value="" type="text">
+                        </div>
+
+                        <!-- <br>
+                        <div class="form-field">
+                            <label for="cGender">Gender :</label>
+                            <div class="ss-custom-select">
+                                <select class="h-full-width h-remove-bottom" name="cGender" id="cGender">
+                                    <option value="Option 2">Male</option>
+                                    <option value="Option 3">Female</option>
+                                </select>
+                            </div>
+                        </div> -->
+
+                        <div class="comments form-field">
+                            <textarea name="cComments" id="cComments" class="h-full-width h-remove-bottom" placeholder="Comments & Questions"></textarea>
+                        </div>
+
+                        <br>
+
+                        <input name="submit" id="submit" class="btn btn--primary btn--large h-full-width" value="Get Connected" type="submit">
+
+                    </fieldset>
+                </form> <!-- end connectForm -->
+
+            </div>
+        </div>
+
+    </section> <!-- end page-content -->
+
+
+    <!-- Social
+    ================================================== -->
+    <section class="s-social">
+            
+        <div class="row social-content">
+            <div class="column">
+                <ul class="social-list">
+                    <li class="social-list__item">
+                        <a href="https://www.facebook.com/rcfyct" title="">
+                            <span class="social-list__icon social-list__icon--facebook"></span>
+                            <span class="social-list__text">Facebook</span>
+                        </a>
+                    </li>
+                   
+                
+                    <li class="social-list__item">
+                        <a href="https://www.instagram.com/rcfyabatech?igsh=dHJ4bnAzaWdhY2w3" title="">
+                            <span class="social-list__icon social-list__icon--instagram"></span>
+                            <span class="social-list__text">Instagram</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div> <!-- end social-content -->
+
+    </section> <!-- end s-social -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer">
+
+        <div class="row footer-top">
+            <div class="column large-4 medium-5 tab-full">
+                <div class="footer-logo">
+                    <a class="site-footer-logo" href="index.html">
+                        <img src="{% static 'images/RCF.jpg' %}" alt="Homepage">
+                    </a>
+                </div>  <!-- footer-logo -->
+                <p>
+                RCF is driven by the mission to win souls 
+                for Christ and prepare believers for eternity, ensuring that students 
+                leave not only academically equipped but spiritually empowered to impact the
+                 world for God’s glory. 
+                </p>
+            </div>
+            <div class="column large-half tab-full">
+                <div class="row">
+                    <div class="column large-7 medium-full">
+                        <h4 class="h6">Our Location</h4>
+                        <p>
+                        Second Floor, Alumni Building
+                        </p>
+        
+                        <p>
+                        <a href="https://chat.whatsapp.com/Eap6yLWgqy1EgKEzQ7aXUJ" target="_blank" class="btn btn--footer">Get Direction</a>
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div> <!-- end footer-top -->
+
+        
+
+{% load static %}
+
+<!-- JavaScript
+================================================== -->
+<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'js/plugins.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+
+
+</body>
